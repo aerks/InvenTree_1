@@ -30,7 +30,7 @@ services:
           - POSTGRES_PASSWORD=pgpassword
         volumes:
           # Map 'data' volume such that postgres database is stored externally
-          - src:/var/lib/postgresql/data
+          - ${PWD}/../dev/data/:/var/lib/postgresql/data
         restart: unless-stopped
 
     # InvenTree web server services
@@ -51,7 +51,7 @@ services:
         #    - 8000
         volumes:
             # Ensure you specify the location of the 'src' directory at the end of this file
-            - src:/home/inventree
+            - ${PWD}/../:/home/inventree
         env_file:
             # Environment variables required for the dev server are configured in dev-config.env
             - dev-config.env
@@ -68,7 +68,7 @@ services:
             - inventree-dev-server
         volumes:
             # Ensure you specify the location of the 'src' directory at the end of this file
-            - src:/home/inventree
+            - ${PWD}/../:/home/inventree
         env_file:
             # Environment variables required for the dev server are configured in dev-config.env
             - dev-config.env
