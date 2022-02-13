@@ -23,7 +23,6 @@ main {
     background-size: cover;
     height: 100vh;
     font-family: 'Numans', sans-serif;
-    color: #eee;
 }
 
 .login-container {
@@ -31,7 +30,7 @@ main {
     border-radius: 15px;
     padding: 20px;
     padding-bottom: 35px;
-    background-color: rgba(50, 50, 50, 0.75);
+    background-color: rgb(50 50 50 / 92%);
     width: 100%;
     max-width: 550px;
     margin: auto;
