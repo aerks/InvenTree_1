@@ -697,7 +697,7 @@ if get_setting('TEST_TRANSLATIONS', False):
 CURRENCIES = CONFIG.get(
     'currencies',
     [
-        'AUD', 'CAD', 'EUR', 'GBP', 'JPY', 'NZD', 'USD',
+        'AUD', 'CAD', 'EUR', 'GBP', 'JPY', 'NZD', 'USD', 'INR'
     ],
 )
 

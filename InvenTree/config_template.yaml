@@ -66,6 +66,7 @@ currencies:
   - JPY
   - NZD
   - USD
+  - INR
 
 # Email backend configuration
 # Ref: https://docs.djangoproject.com/en/dev/topics/email/
